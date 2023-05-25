@@ -1,8 +1,11 @@
+import { LogIn } from '../components/LogIn'
+
 export const SignIn = () => {
   return (
     <>
-      <h1>SignIn</h1>
-      <hr />
+      <div className='center'>
+        <LogIn />
+      </div>
     </>
   )
 }

@@ -1,22 +1,38 @@
-import { NavLink, useLocation } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import Batman from '../../assets/heroes/dc-batman.jpg'
 
+const isPath = ({ isActive: a }) => { a ? 'active' : '' }
+
 export const Navbar = () => {
-  const { pathname } = useLocation()
+  const navigate = useNavigate()
+
+  const handleLogout = () => {
+    window.alert('LOGOUT')
+    navigate('/')
+  }
 
   return (
     <nav style={{ backgroundImage: '../../assets/heroes/dc-batman.jpg' }}>
       <img src={Batman} alt='Batman' />
       <h1>Heroes App</h1>
       <NavLink className='first' to='/'>
-        <button className={pathname === '/' ? 'active' : null}>Home</button>
+        <button className={String(isPath)}>
+          Home
+        </button>
       </NavLink>
       <NavLink to='/marvel'>
-        <button className={pathname === '/marvel' ? 'active' : null}>Marvel</button>
+        <button className={String(isPath)}>
+          Marvel
+        </button>
       </NavLink>
       <NavLink to='/dc'>
-        <button className={pathname === '/dc' ? 'active' : null}>DC</button>
+        <button className={String(isPath)}>
+          DC
+        </button>
       </NavLink>
+      <button onClick={handleLogout}>
+        Logout
+      </button>
     </nav>
   )
 }
