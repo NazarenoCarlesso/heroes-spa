@@ -1,0 +1,34 @@
+nav button {
+  font-weight: 600;
+  border: 2px solid #ffb300;
+  color: #ffb300;
+  background-color: transparent;
+  margin: 0px 4px;
+}
+
+nav .active button {
+  color: #ffdd33;
+  border: 2px solid #ffdd33;
+}
+
+nav h1 {
+  margin-left: 10px;
+  height: 50px;
+  text-shadow: 2px 4px 6px #00081ab7;
+}
+
+nav .first {
+  margin-left: 10px;
+}
+
+nav img {
+  position: absolute;
+  opacity: 0.1;
+  height: 142px;
+  width: 600px;
+  object-fit: cover;
+  object-position: 0px -430px;
+  border: 2px solid #0043df;
+  border-radius: 0.3rem;
+  z-index: -1;
+}
