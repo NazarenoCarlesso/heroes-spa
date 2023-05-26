@@ -198,3 +198,21 @@ img {
   display: flex;
   flex-direction: row;
 }
+
+.alert {
+  background-color: #87c1e7;
+  border: 1px solid #68a2c9;
+  border-radius: 5px;
+  color: #003b6b;
+  padding: 20px;
+  text-align: center;
+}
+
+.warning {
+  background-color: #e78787;
+  border: 1px solid #c96868;
+  border-radius: 5px;
+  color: #6b0000;
+  padding: 20px;
+  text-align: center;
+}

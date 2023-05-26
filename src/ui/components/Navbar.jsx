@@ -30,6 +30,11 @@ export const Navbar = () => {
           DC
         </button>
       </NavLink>
+      <NavLink to='/search'>
+        <button className={String(isPath)}>
+          Search
+        </button>
+      </NavLink>
       <button onClick={handleLogout}>
         Logout
       </button>
