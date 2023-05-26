@@ -11,7 +11,7 @@ export const HeroCard = ({
   return (
     <div className='card animate__animated animate__fadeIn'>
       <div className='card-front'>
-        <img src={`/assets/heroes/${id}.jpg`} alt={superhero} />
+        <img src={`/heroes/${id}.jpg`} alt={superhero} />
       </div>
       <div className='card-info'>
         <h5 className='card-title center'>

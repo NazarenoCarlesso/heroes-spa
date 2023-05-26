@@ -54,7 +54,7 @@ export const Search = () => {
           )
         }
         {
-          heroes.length === 0
+          heroes.length === 0 && query.trim().length > 0
             ? (
               <div className='warning'>
                 No heroe with <b>{query}</b>

@@ -19,7 +19,7 @@ export const Hero = () => {
     <div className='row hero-detail'>
       <img
         className='hero-img animate__animated animate__fadeInLeft'
-        src={`/assets/heroes/${id}.jpg`}
+        src={`/heroes/${id}.jpg`}
         alt={superhero} />
       <div>
         <h3>{superhero}</h3>

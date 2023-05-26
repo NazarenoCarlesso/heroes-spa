@@ -1,19 +1,22 @@
 import { NavLink, useNavigate } from 'react-router-dom'
-import Batman from '../../assets/heroes/dc-batman.jpg'
+import { useContext } from 'react'
+import { AuthContext } from '../../auth/context/AuthContext'
 
 const isPath = ({ isActive: a }) => { a ? 'active' : '' }
 
 export const Navbar = () => {
   const navigate = useNavigate()
+  const { user, logout } = useContext(AuthContext)
 
   const handleLogout = () => {
-    window.alert('LOGOUT')
+    logout()
+
     navigate('/')
   }
 
   return (
-    <nav style={{ backgroundImage: '../../assets/heroes/dc-batman.jpg' }}>
-      <img src={Batman} alt='Batman' />
+    <nav style={{ backgroundImage: '/heroes/dc-batman.jpg' }}>
+      <img src='/heroes/dc-batman.jpg' alt='Batman' />
       <h1>Heroes App</h1>
       <NavLink className='first' to='/'>
         <button className={String(isPath)}>
@@ -35,6 +38,7 @@ export const Navbar = () => {
           Search
         </button>
       </NavLink>
+      <button>{user ? user.name : '-----'}</button>
       <button onClick={handleLogout}>
         Logout
       </button>
