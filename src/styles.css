@@ -23,7 +23,7 @@ nav .first {
 
 nav img {
   position: absolute;
-  opacity: 0.1;
+  opacity: 0.2;
   height: 142px;
   width: 720px;
   object-fit: cover;
@@ -114,4 +114,87 @@ nav img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.card {
+  color: #1b1b1b;
+  width: 220px;
+  height: 350px;
+  position: relative;
+  outline: 4px solid #ffb300;
+  border-radius: 8px;
+  line-height: 150%;
+  background-blend-mode: multiply;
+  background: linear-gradient(to top, #090f226c, #2b4c9246);
+  transition: background-color 1s ease-in-out;
+  overflow: hidden;
+}
+
+img {
+  opacity: 1;
+}
+
+.card-front {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.card:hover {
+  outline: 4px solid #ffdd33;
+  box-shadow: 0px 0px 24px -6px #0084ffb9;
+}
+
+.card:hover .card-front {
+  transform: translateX(-100%);
+}
+
+.card-title {
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
+  height: 55px;
+}
+
+.card-info {
+  padding: 10px 16px;
+  color: #e7e7e7;
+  height: 300px;
+}
+
+.card-info p {
+  margin: 10px 0px;
+}
+
+.alter-ego {
+  color: #9dc4ff;
+  font-weight: 500;
+}
+
+.card-info small {
+  color: #a0a0a0;
+}
+
+.card button {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0px 10px;
+  padding: 4px;
+  background-color: #3a63d7;
+  width: 200px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  padding: 0px;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
 }
