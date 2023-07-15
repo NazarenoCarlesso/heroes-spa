@@ -24,8 +24,6 @@ export const Search = () => {
 
   return (
     <>
-      <h1>Search</h1>
-      <hr />
       <div>
         <h4>Searching</h4>
         <hr />

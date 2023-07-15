@@ -15,10 +15,10 @@ export const Navbar = () => {
   }
 
   return (
-    <nav style={{ backgroundImage: '/heroes/dc-batman.jpg' }}>
-      <img src='/heroes/dc-batman.jpg' alt='Batman' />
+    <nav>
       <h1>Heroes App</h1>
-      <NavLink className='first' to='/'>
+      <h3>A fantastic web for comic fans</h3>
+      <NavLink to='/'>
         <button className={String(isPath)}>
           Home
         </button>

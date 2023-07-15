@@ -1,24 +1,73 @@
-nav button {
-  font-weight: 600;
-  border: 2px solid #ffb300;
-  color: #ffb300;
-  background-color: transparent;
-  margin: 0px 4px;
+:root {
+  color-scheme: dark;
+  color: #f1f1f1;
+  background-color: #1d1d1d;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
 
-nav .active button {
-  color: #ffdd33;
-  border: 2px solid #ffdd33;
+#root {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+body {
+  font-family: 'Comic Neue';
+  margin: 0 auto;
+  display: block;
+}
+
+nav {
+  background-image: url('https://i.imgur.com/BR870Bu.jpg');
+  background-position: 50%;
+  background-size: cover;
+  width: 100%;
+  border-bottom: 2px solid;
+  border-color: #242424;
+  box-shadow:  0px 10px 10px 0px rgba(0, 0, 0, .4);
 }
 
 nav h1 {
+  font-family: 'Bangers';
+  font-size: 78px;
   margin-left: 10px;
+  margin-top: 0px;
   height: 50px;
-  text-shadow: 2px 4px 6px #00081ab7;
+  color: #1f1f1f;
+  text-shadow: 0px 0px 20px #ff0000d5;
+  margin-bottom: 28px;
 }
 
-nav .first {
-  margin-left: 10px;
+nav h3 {
+  font-family: 'Bangers';
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 20px;
+  color: #1f1f1f;
+  text-shadow: 0px 0px 20px #ff0000d5;
+}
+
+nav button {
+  font-family: 'Staatliches';
+  font-size: 16px;
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  background-color: #1f1f1f;
+  margin: 10px 4px;
+  padding: 4px 16px;
+  box-shadow:  0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+
+nav .active button {
+  color: #ff3f3f;
+  border: 1px solid #ff3939;
+  background-color: #242424;
+  box-shadow:  0px 0px 10px 0px rgba(0, 0, 0, 0.8);
 }
 
 nav img {
@@ -117,15 +166,16 @@ nav img {
 }
 
 .card {
+  font-family: 'Staatliches';
   color: #1b1b1b;
   width: 220px;
   height: 350px;
   position: relative;
-  outline: 4px solid #ffb300;
+  outline: 4px solid #ff0000;
   border-radius: 8px;
   line-height: 150%;
   background-blend-mode: multiply;
-  background: linear-gradient(to top, #090f226c, #2b4c9246);
+  background: linear-gradient(to top, #2209096c, #922b2b46);
   transition: background-color 1s ease-in-out;
   overflow: hidden;
 }
@@ -142,8 +192,8 @@ img {
 }
 
 .card:hover {
-  outline: 4px solid #ffdd33;
-  box-shadow: 0px 0px 24px -6px #0084ffb9;
+  outline: 4px solid #ff2525;
+  box-shadow: 0px 0px 24px -6px #ff0000b9;
 }
 
 .card:hover .card-front {
@@ -160,7 +210,7 @@ img {
 
 .card-info {
   padding: 10px 16px;
-  color: #e7e7e7;
+  color: #f1f1f1;
   height: 300px;
 }
 
@@ -169,7 +219,7 @@ img {
 }
 
 .alter-ego {
-  color: #9dc4ff;
+  color: #ff6c6c;
   font-weight: 500;
 }
 
@@ -182,16 +232,17 @@ img {
   font-weight: 500;
   margin: 0px 10px;
   padding: 4px;
-  background-color: #3a63d7;
+  background-color: #d73a3a;
   width: 200px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   justify-items: center;
   padding: 0px;
   gap: 20px;
+  width: 100%;
 }
 
 .row {
