@@ -25,8 +25,6 @@ export const Search = () => {
   return (
     <>
       <div>
-        <h4>Searching</h4>
-        <hr />
         <form onSubmit={onSearchSubmit}>
           <input
             type='text'

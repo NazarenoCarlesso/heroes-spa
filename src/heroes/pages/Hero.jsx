@@ -20,22 +20,23 @@ export const Hero = () => {
       <img
         className='hero-img animate__animated animate__fadeInLeft'
         src={`/heroes/${id}.jpg`}
-        alt={superhero} />
-      <div>
+        alt={superhero}
+      />
+      <div className='hero-info'>
         <h3>{superhero}</h3>
         <ul>
           <li>
-            <b>Alter ego:</b> {alter_ego}
+            <b className='alter-ego'>Alter ego: {alter_ego}</b>
           </li>
           <li>
-            <b>Publisher:</b> {publisher}
+            <b className='alter-ego'>Publisher: {publisher}</b>
           </li>
           <li>
-            <b>First appearance:</b> {first_appearance}
+            <b className='alter-ego'>First appearance: {first_appearance}</b>
           </li>
         </ul>
-        <h5>Characters</h5>
-        <p>{characters}</p>
+        <h5 className='characters'>Characters</h5>
+        <p className='characters-list'>{characters}</p>
         <button onClick={handleNavigateBack}>
           Regresar
         </button>

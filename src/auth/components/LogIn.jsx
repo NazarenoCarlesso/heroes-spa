@@ -23,9 +23,15 @@ export const LogIn = () => {
       <form className='login-form'>
         <div className='input-group'>
           <label>Username</label>
-          <input />
+          <input
+            type='text'
+            autoComplete={false}
+          />
           <label>Password</label>
-          <input />
+          <input
+            type='password'
+            autoComplete={false}
+          />
           <a>Forgot Password ?</a>
         </div>
         <button onClick={handleLogin}>
